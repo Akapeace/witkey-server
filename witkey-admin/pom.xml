@@ -29,7 +29,6 @@
         <dependency>
             <groupId>com.witkey</groupId>
             <artifactId>witkey-common</artifactId>
-            <version>${revision}</version>
         </dependency>
     </dependencies>
 
