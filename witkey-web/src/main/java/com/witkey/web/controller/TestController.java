@@ -1,8 +1,9 @@
-package com.witkey.api.controller;
+package com.witkey.web.controller;
 
-import com.witkey.api.model.User;
+
 import com.witkey.common.aspect.ApiOperationLog;
 import com.witkey.common.utils.Response;
+import com.witkey.web.model.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;

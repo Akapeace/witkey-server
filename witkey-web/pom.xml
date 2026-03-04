@@ -10,9 +10,9 @@
     </parent>
 
     <groupId>com.witkey</groupId>
-    <artifactId>witkey-api</artifactId>
-    <name>witkey-api</name>
-    <description>witkey-api (入口项目，负责博客前台展示相关功能，打包也放在这个模块负责)</description>
+    <artifactId>witkey-web</artifactId>
+    <name>witkey-web</name>
+    <description>witkey-web (入口项目，负责博客前台展示相关功能，打包也放在这个模块负责)</description>
 
     <dependencies>
         <dependency>

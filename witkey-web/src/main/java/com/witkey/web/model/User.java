@@ -1,4 +1,4 @@
-package com.witkey.api.model;
+package com.witkey.web.model;
 
 import lombok.Data;
 
