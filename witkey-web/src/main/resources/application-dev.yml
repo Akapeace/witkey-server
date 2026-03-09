@@ -1,0 +1,3 @@
+logging:
+  file:
+    path: d:/logs/${spring.application.name}
