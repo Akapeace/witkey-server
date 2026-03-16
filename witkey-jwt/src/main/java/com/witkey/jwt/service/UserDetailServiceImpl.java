@@ -6,6 +6,7 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.Objects;
@@ -15,6 +16,7 @@ import java.util.Objects;
  * @date 2026/3/16 17:21
  * @description:
  */
+@Service
 public class UserDetailServiceImpl implements UserDetailsService {
 
     @Resource

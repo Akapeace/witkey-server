@@ -2,10 +2,12 @@ package com.witkey.jwt.utils;
 
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.CredentialsExpiredException;
+import org.springframework.stereotype.Component;
 
 import java.security.Key;
 import java.time.LocalDateTime;
@@ -18,6 +20,8 @@ import java.util.Date;
  * @date 2026/3/16 17:07
  * @description:
  */
+@Component
+@Slf4j
 public class JwtTokenHelper implements InitializingBean {
 
     /**
