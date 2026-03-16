@@ -6,3 +6,9 @@ spring:
     active: dev
 server:
   port: 8080
+
+jwt:
+  # 签发人
+  issuer: peace
+  # 秘钥
+  secret: WqdIHC7SZKimfJwa3Ah5IkD3UVZvt5VaE8WkEIyyKMyyiePFNjrMPXNd2SQJb11OPp8uu6iyEPaXDT7EZRH4vQ==
