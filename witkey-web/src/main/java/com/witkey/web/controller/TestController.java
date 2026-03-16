@@ -24,7 +24,7 @@ import java.time.LocalTime;
 @Slf4j
 public class TestController {
 
-    @PostMapping("/test")
+    @PostMapping("/admin/test")
     @ApiOperationLog(description = "测试接口")
     public Response test(@RequestBody @Validated User user) {
         // 打印入参

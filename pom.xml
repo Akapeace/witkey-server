@@ -26,6 +26,7 @@
         <module>witkey-web</module>
         <module>witkey-admin</module>
         <module>witkey-common</module>
+        <module>witkey-jwt</module>
     </modules>
 
 
@@ -61,6 +62,12 @@
             <dependency>
                 <groupId>com.witkey</groupId>
                 <artifactId>witkey-common</artifactId>
+                <version>${revision}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.witkey</groupId>
+                <artifactId>witkey-jwt</artifactId>
                 <version>${revision}</version>
             </dependency>
 

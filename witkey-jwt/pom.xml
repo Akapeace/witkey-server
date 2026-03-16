@@ -10,36 +10,23 @@
     </parent>
 
     <groupId>com.witkey</groupId>
-    <artifactId>witkey-admin</artifactId>
-    <name>witkey-admin</name>
-    <description>witkey-admin (负责管理后台相关功能)</description>
-
+    <artifactId>witkey-jwt</artifactId>
+    <name>witkey-jwt</name>
+    <description>witkey-jwt (JWT 模块，管理用户认证、鉴权)</description>
 
     <dependencies>
+        <!-- 免写冗余的 Java 样板式代码 -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+
+        <!-- 单元测试 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.witkey</groupId>
-            <artifactId>witkey-common</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.witkey</groupId>
-            <artifactId>witkey-jwt</artifactId>
-        </dependency>
-
-        <!-- knife4j -->
-        <dependency>
-            <groupId>com.github.xiaoymin</groupId>
-            <artifactId>knife4j-openapi2-spring-boot-starter</artifactId>
         </dependency>
 
         <!-- Spring Security -->
@@ -50,6 +37,5 @@
 
 
     </dependencies>
-
 
 </project>
