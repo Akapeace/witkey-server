@@ -30,6 +30,7 @@ public class TestController {
 
     @PostMapping("/admin/test")
     @ApiOperationLog(description = "测试接口")
+    @ApiOperation(value = "测试接口")
     public Response test(@RequestBody @Validated User user) {
         // 打印入参
         log.info(JsonUtil.toJsonString(user));

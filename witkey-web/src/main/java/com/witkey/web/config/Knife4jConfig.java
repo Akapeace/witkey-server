@@ -30,7 +30,7 @@ public class Knife4jConfig {
                 .groupName("Web 前台接口")
                 .select()
                 // 这里指定 Controller 扫描包路径
-                .apis(RequestHandlerSelectors.basePackage("com.witkek.web.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.witkey.web.controller"))
                 .paths(PathSelectors.any())
                 .build();
         return docket;
