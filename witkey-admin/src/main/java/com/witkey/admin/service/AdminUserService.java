@@ -15,5 +15,7 @@ public interface AdminUserService {
      * @return
      */
     Response updatePassword(UpdateAdminUserPasswordReqVO updateAdminUserPasswordReqVO);
+
+    Response findUserInfo();
 }
 
