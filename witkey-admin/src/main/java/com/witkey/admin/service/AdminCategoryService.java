@@ -1,6 +1,8 @@
 package com.witkey.admin.service;
 
 import com.witkey.admin.model.vo.category.AddCategoryReqVO;
+import com.witkey.admin.model.vo.category.FindCategoryPageListReqVO;
+import com.witkey.common.utils.PageResponse;
 import com.witkey.common.utils.Response;
 
 /**
@@ -15,5 +17,11 @@ public interface AdminCategoryService {
      * @return
      */
     Response addCategory(AddCategoryReqVO addCategoryReqVO);
+    /**
+     * 分类分页数据查询
+     * @param findCategoryPageListReqVO
+     * @return
+     */
+    PageResponse findCategoryList(FindCategoryPageListReqVO findCategoryPageListReqVO);
 }
 
