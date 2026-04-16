@@ -1,7 +1,7 @@
 package com.witkey.admin.service.impl;
 
-import com.witkey.admin.model.vo.FindUserInfoRspVO;
-import com.witkey.admin.model.vo.UpdateAdminUserPasswordReqVO;
+import com.witkey.admin.model.vo.user.FindUserInfoRspVO;
+import com.witkey.admin.model.vo.user.UpdateAdminUserPasswordReqVO;
 import com.witkey.admin.service.AdminUserService;
 import com.witkey.common.domain.mapper.UserMapper;
 import com.witkey.common.enums.ResponseCodeEnum;

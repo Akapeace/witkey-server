@@ -1,6 +1,6 @@
 package com.witkey.admin.service;
 
-import com.witkey.admin.model.vo.UpdateAdminUserPasswordReqVO;
+import com.witkey.admin.model.vo.user.UpdateAdminUserPasswordReqVO;
 import com.witkey.common.utils.Response;
 
 /**

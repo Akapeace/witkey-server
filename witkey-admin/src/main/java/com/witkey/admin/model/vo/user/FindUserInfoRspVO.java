@@ -1,4 +1,4 @@
-package com.witkey.admin.model.vo;
+package com.witkey.admin.model.vo.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

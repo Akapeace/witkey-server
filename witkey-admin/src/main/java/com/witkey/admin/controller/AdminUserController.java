@@ -1,6 +1,6 @@
 package com.witkey.admin.controller;
 
-import com.witkey.admin.model.vo.UpdateAdminUserPasswordReqVO;
+import com.witkey.admin.model.vo.user.UpdateAdminUserPasswordReqVO;
 import com.witkey.admin.service.AdminUserService;
 import com.witkey.common.aspect.ApiOperationLog;
 import com.witkey.common.utils.Response;
