@@ -1,6 +1,7 @@
 package com.witkey.admin.service;
 
 import com.witkey.admin.model.vo.category.AddCategoryReqVO;
+import com.witkey.admin.model.vo.category.DeleteCategoryReqVO;
 import com.witkey.admin.model.vo.category.FindCategoryPageListReqVO;
 import com.witkey.common.utils.PageResponse;
 import com.witkey.common.utils.Response;
@@ -23,5 +24,13 @@ public interface AdminCategoryService {
      * @return
      */
     PageResponse findCategoryList(FindCategoryPageListReqVO findCategoryPageListReqVO);
+
+
+    /**
+     * 删除分类
+     * @param deleteCategoryReqVO
+     * @return
+     */
+    Response deleteCategory(DeleteCategoryReqVO deleteCategoryReqVO);
 }
 

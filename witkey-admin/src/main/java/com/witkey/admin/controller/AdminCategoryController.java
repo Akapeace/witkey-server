@@ -1,6 +1,7 @@
 package com.witkey.admin.controller;
 
 import com.witkey.admin.model.vo.category.AddCategoryReqVO;
+import com.witkey.admin.model.vo.category.DeleteCategoryReqVO;
 import com.witkey.admin.model.vo.category.FindCategoryPageListReqVO;
 import com.witkey.admin.service.AdminCategoryService;
 import com.witkey.common.aspect.ApiOperationLog;
@@ -41,6 +42,14 @@ public class AdminCategoryController {
     public PageResponse findCategoryList(@RequestBody @Validated FindCategoryPageListReqVO findCategoryPageListReqVO) {
         return categoryService.findCategoryList(findCategoryPageListReqVO);
     }
+
+    @PostMapping("/category/delete")
+    @ApiOperation(value = "删除分类")
+    @ApiOperationLog(description = "删除分类")
+    public Response deleteCategory(@RequestBody @Validated DeleteCategoryReqVO deleteCategoryReqVO) {
+        return categoryService.deleteCategory(deleteCategoryReqVO);
+    }
+
 
 
 }
