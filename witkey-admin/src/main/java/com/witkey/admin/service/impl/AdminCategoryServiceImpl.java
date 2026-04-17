@@ -11,6 +11,7 @@ import com.witkey.common.domain.dos.CategoryDO;
 import com.witkey.common.domain.mapper.CategoryMapper;
 import com.witkey.common.enums.ResponseCodeEnum;
 import com.witkey.common.exception.BizException;
+import com.witkey.common.model.vo.SelectRspVO;
 import com.witkey.common.utils.PageResponse;
 import com.witkey.common.utils.Response;
 import lombok.extern.slf4j.Slf4j;
@@ -116,6 +117,28 @@ public class AdminCategoryServiceImpl implements AdminCategoryService {
 
         return Response.success();
     }
+
+    @Override
+    public Response findCategorySelectList() {
+        // 查询所有分类
+        List<CategoryDO> categoryDOS = categoryMapper.selectList(null);
+
+        // DO 转 VO
+        List<SelectRspVO> selectRspVOS = null;
+        // 如果分类数据不为空
+        if (!CollectionUtils.isEmpty(categoryDOS)) {
+            // 将分类 ID 作为 Value 值，将分类名称作为 label 展示
+            selectRspVOS = categoryDOS.stream()
+                    .map(categoryDO -> SelectRspVO.builder()
+                            .label(categoryDO.getName())
+                            .value(categoryDO.getId())
+                            .build())
+                    .collect(Collectors.toList());
+        }
+
+        return Response.success(selectRspVOS);
+    }
+
 
 
 }

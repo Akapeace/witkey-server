@@ -32,5 +32,12 @@ public interface AdminCategoryService {
      * @return
      */
     Response deleteCategory(DeleteCategoryReqVO deleteCategoryReqVO);
+
+
+    /**
+     * 分类下拉列表查询
+     * @return
+     */
+    Response findCategorySelectList();
 }
 
