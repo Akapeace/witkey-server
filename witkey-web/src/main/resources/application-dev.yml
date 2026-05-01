@@ -21,3 +21,12 @@ spring:
 logging:
   file:
     path: ./logs
+
+#=================================================================
+# minio
+#=================================================================
+minio:
+  endpoint: http://127.0.0.1:9000
+  accessKey: peace
+  secretKey: peace
+  bucketName: witkey
